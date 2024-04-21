@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo IMC</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!--Criando a página Calculadora de IMC-->
+    <h1 class="título">Calculadora de IMC</h1>
+    <form class="Formulário">
+            <label class="título-1" for="text">Peso:</label>
+        <br/>
+            <input type="text" id="txtPeso" required/>
+        <br/>
+            <label class="título-2" for="text">Altura:</label>
+        <br/>
+            <input type="text" id="txtAltura" required/>
+            <br/>
+            <input type="radio" name="txtsexo" id="txtsexof" value="F" checked/>F
+            <input type="radio" name="txtsexo" id="txtsexom" value="M"/>M
+        <br/>
+        <div class="Resultado">
+            <label class = "título-3" for="text">Resultado: </label>
+        <br/>
+        <input type="text" id="txtResultado" disabled/>
+        </div>
+            <textarea id="txtMensagem" minlength="2" maxlength="255" name="Mensagem do IMC" disabled></textarea>
+        <br/>
+        <div class="botões">
+            <input type="button" value="Calcular" onclick="Calcular()"/>
+            <input type="reset" value="Limpar"/>
+        </div>
+    </form>
+   
+</body>
+</html>
